@@ -29,5 +29,13 @@ bitcoin = gets.chomp
 # 2. The value will be a string, so you'll want to convert it to a Float.
 bitcoin = bitcoin.to_f
 
+bitcoin_price = bitcoin_data ["USD"]["last"]
+
+total = bitcoin * bitcoin_price
+
+puts  bitcoin_price
+puts total
+
+
 # 3. inspect the bitcoin_data hash
 # puts bitcoin_data
